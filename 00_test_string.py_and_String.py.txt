@@ -1,0 +1,9 @@
+*** Settings ***
+Library           string
+Library           String
+
+*** Test Cases ***
+string.py
+    ${te}=    count    abcdesaa    a
+    ${t}=    Create List    \${abced}    \\    \#    d
+    ${te2}    Join    ${t}    e
